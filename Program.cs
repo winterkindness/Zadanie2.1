@@ -49,10 +49,10 @@ namespace PR2._1
            radius = _radius;
            Vs = pi* Math.Pow(height,2)*(radius-height/3);      
         }
-
         
-
-        public void Print()
+         // Вывод
+         
+         public void Print()
         {
             Console.WriteLine("Площадь поверхности шара: " + area);
             Console.WriteLine("Объем шара: " + volume);
