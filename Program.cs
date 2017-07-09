@@ -16,10 +16,10 @@ namespace PR2._1
         public static int count = 0;
         public const double pi = 3.14;     // Число пи
         public static double radius;             // Поле: радиус шара
-        public double height;
+        public double height;                   // Высота
         public double area;        // Автовычисляемое поле: площадь поверхности
         public double volume;      // Автовычисляемое поле: объём шара
-        public double Vcub;          // Объем куба, в который вписан шар
+        public double Vcub;        // Объем куба, в который вписан шар
         public double Vs;          // Объем шарового слоя по заданным высотам шаровых сегментов
         
 
@@ -60,7 +60,7 @@ namespace PR2._1
             Console.WriteLine("Площадь поверхности шара: " + area);
             Console.WriteLine("Объем шара: " + volume);
             Console.WriteLine("Объем куба, в который вписан шар: " + Vcub);
-            Console.WriteLine("объем шарового слоя по заданным высотам шаровых сегментов: " + Vs);
+            Console.WriteLine("Объем шарового слоя по заданным высотам шаровых сегментов: " + Vs);
             
         }
         
@@ -87,6 +87,3 @@ namespace PR2._1
         }
     }
 }
-//public - модификатор доступа
-//private - модификатор доступа, только тому классу где задано
-//protected - из дочернего класса
