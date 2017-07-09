@@ -54,9 +54,6 @@ namespace PR2._1
 
         public void Print()
         {
-            Console.WriteLine("Шар № " + count);
-            Console.WriteLine("Радиус шара: " + radius);
-            Console.WriteLine("Высота шара: " + height);
             Console.WriteLine("Площадь поверхности шара: " + area);
             Console.WriteLine("Объем шара: " + volume);
             Console.WriteLine("Объем куба, в который вписан шар: " + Vcub);
@@ -70,20 +67,15 @@ namespace PR2._1
     {
        public static void Main(string[] args)
         {
-
-            for (int i = 1; i < 10; i++)
-            {
-                Console.WriteLine("Введите радиус:");
-               double  _radius = Convert.ToDouble(Console.ReadLine());
-                Console.WriteLine("Введите высоту:");
-               double _height = Convert.ToInt32(Console.ReadLine());
-                Ball ball = new Ball(_height, _radius);
-                ball.Vc();
-                ball.Vss(_height,_radius);
-                ball.Print();
-            }
-           
-            Console.ReadKey();
+             Console.WriteLine("Введите радиус:");
+             double  _radius = Convert.ToDouble(Console.ReadLine());
+             Console.WriteLine("Введите высоту:");
+             double _height = Convert.ToInt32(Console.ReadLine());
+             Ball ball = new Ball(_height, _radius);
+             ball.Vc();
+             ball.Vss(_height,_radius);
+             ball.Print();           
+             Console.ReadKey();
         }
     }
 }
