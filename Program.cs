@@ -12,7 +12,6 @@ namespace PR2._1
 {
     class Ball                     // Класс "Шар"
     {
-        public static int count = 0;
         public const double pi = 3.14;     // Число пи
         public static double radius;             // Поле: радиус шара
         public double height;                   // Высота
@@ -27,7 +26,6 @@ namespace PR2._1
         {
             height = _height;
             radius = _radius;
-            count++;
             area = 4 * pi * Math.Pow(radius, 2);
             volume = 4 * pi * Math.Pow(radius, 3)/3;
         }
